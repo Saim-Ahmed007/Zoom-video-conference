@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-const server_url = 'http://localhost:3000'
 import io from "socket.io-client";
 import styles from '../styles/videoComponent.module.css'
 import TextField  from '@mui/material/TextField';
@@ -14,6 +13,9 @@ import MicIcon  from '@mui/icons-material/Mic';
 import MicOffIcon from '@mui/icons-material/MicOff'
 import ChatIcon from '@mui/icons-material/Chat'
 import Badge from '@mui/material/Badge';
+import server from '../environment';
+
+const server_url = server
 
 var connections = {}
 
